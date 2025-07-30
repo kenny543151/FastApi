@@ -9,10 +9,10 @@ from passlib.context import CryptContext
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
+# load environment variables
 load_dotenv()
 
-# JWT Configuration
+# jwt configuration
 SECRET_KEY = os.getenv("SECRET_KEY", "8f3a47b6e9d2c5f1a0e7d4b2c8f6a3e9d5b1c7f2a8e4d6b0c3f5a9e2d7b4c8")
 ALGORITHM = os.getenv("ALGORITHM", "HS256")
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
