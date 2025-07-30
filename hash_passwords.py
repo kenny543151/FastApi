@@ -10,7 +10,7 @@ def hash_staff_passwords():
             port="3306",       # e.g., 3306
             database="sakila",
             user="root",   # e.g., root
-            password="Nwulunwu@4135"
+            password="kenneth"
         )
         cursor = connection.cursor(dictionary=True)
         cursor.execute("SELECT staff_id, password FROM staff")
