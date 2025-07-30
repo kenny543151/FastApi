@@ -6,10 +6,10 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def hash_staff_passwords():
     try:
         connection = mysql.connector.connect(
-            host="localhost",       # e.g., localhost
-            port="3306",       # e.g., 3306
+            host="localhost",    
+            port="3306",  
             database="sakila",
-            user="root",   # e.g., root
+            user="root", 
             password="kenneth"
         )
         cursor = connection.cursor(dictionary=True)
